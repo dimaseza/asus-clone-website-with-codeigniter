@@ -1,0 +1,51 @@
+body {
+      background-color: #F8F9FA;
+      font-family: sans-serif;
+}
+
+.bodyHero {
+      background-color: white;
+      margin-left: 30%;
+      margin-right: 30%;
+}
+
+.bodyHero .btnOutline {
+      width: 50%;
+      background-color: white;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #5ABAF7;
+      color: #5ABAF7;
+}
+
+.bodyHero .btnOutline:hover {
+      background-color: #5ABAF7;
+      color: white;
+}
+
+.orText {
+      color: rgb(194, 194, 194);
+}
+
+.informationText {
+      margin-left: 23%;
+      margin-right: 23%;
+      text-align: left;
+      font-size: 12px;
+      color: orange;
+}
+
+a {
+      color: orange;
+}
+
+a:hover {
+      color: orange;
+}
+
+.registrationInfoNumber {
+      margin-left: 23%;
+      margin-right: 23%;
+      font-size: 12px;
+      color: gray;
+}

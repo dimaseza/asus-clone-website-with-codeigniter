@@ -1,0 +1,157 @@
+/* @media all and (min-width: 992px) {
+      .navbar .nav-item .dropdown-menu {
+            display: none;
+      }
+      .navbar .nav-item:hover .dropdown-menu {
+            display: block;
+      }
+      .navbar .nav-item .dropdown-menu {
+            margin-top: 0;
+      }
+} */
+
+body {
+      font-family: sans-serif;
+}
+
+.navbar .navbar-nav .dropdown:hover {
+      border-bottom: 4px solid black;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+      display: none;
+      list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item:hover .dropdown-menu {
+      display: block;
+      color: black;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+      margin-top: 8px;
+      /* width: 100%; */
+      max-width: max-content;
+      max-height: max-content;
+}
+
+.navbar .navbar-nav .nav-link {
+      color: black;
+}
+
+.navbar .row .nav-link {
+      color: black;
+}
+
+.navbar .row .dropdown-menu {
+      margin-top: 1em;
+      width: 1200px !important;
+      left: auto;
+      right: 0;
+}
+
+.form-group .form-control {
+      padding-left: 2.375rem;
+}
+
+.form-group .form-control-icon {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 2.375rem;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+}
+
+.body3 h6 {
+      font-size: 20px;
+}
+
+.body3 li {
+      list-style-type: none;
+      margin-bottom: 8px;
+}
+
+.body3 li a {
+      text-decoration: none;
+      color: darkgray;
+      font-weight: 300;
+      font-size: 12px;
+}
+
+.body3 li a:hover {
+      color: black;
+}
+
+.body4 p {
+      font-size: 12px;
+}
+
+.body4 .footerText {
+      font-size: 10px;
+      color: darkgray;
+}
+
+.body4 .footerText {
+      font-size: 10px;
+      color: darkgray;
+}
+
+.body4 a {
+      text-decoration: none;
+}
+
+.body4 .row a:hover {
+      text-decoration: none;
+      color: black;
+}
+
+.body4 .copyright {
+      font-size: 10px;
+}
+
+.body4 .copyright a {
+      pointer-events: none;
+      cursor: default;
+      font-size: 10px;
+      color: black;
+}
+
+.body4 .language a {
+      color: black;
+}
+
+.body4 .language a:hover {
+      color: blue;
+}
+
+/* .dropdown-submenu {
+      position: relative;
+} */
+
+.dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
+}
+
+li {
+      list-style-type: none;
+}
+
+.navbar .phoneMenu {
+      text-decoration: none;
+      font-size: 14px;
+      color: gray;
+}
