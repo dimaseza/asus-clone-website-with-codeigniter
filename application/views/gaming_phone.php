@@ -262,48 +262,32 @@
                         </div>
                         <div class="col">
                               <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img class="card-img-top" src="<?= base_url('./assets/images/rog1.png'); ?>" alt="Card image cap">
-                                                <div class="card-body">
-                                                      <div class="custom-control custom-checkbox mb-2">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck17">
-                                                            <label class="custom-control-label" for="customCheck17">
-                                                                  BANDINGKAN
-                                                            </label>
+                                    <?php
+                                    foreach ($product as $row) {
+                                    ?>
+                                          <div class="col">
+                                                <div class="card h-100">
+                                                      <img class="card-img-top" src="<?= base_url('assets/images/') . $row->image ?>" alt="Card image cap">
+                                                      <div class="card-body">
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                  <input type="checkbox" class="custom-control-input" id="customCheck17">
+                                                                  <label class="custom-control-label" for="customCheck17">
+                                                                        BANDINGKAN
+                                                                  </label>
+                                                            </div>
+                                                            <hr>
+                                                            <h5 class="card-title"><?= $row->name; ?></h5>
+                                                            <p class="deskripsiTextCard card-text mb-5"><?= $row->description; ?>
+                                                            </p>
+                                                            <br>
+                                                            <button type="button" class="btn btn-primary">WHERE TO BUY</button>
                                                       </div>
-                                                      <hr>
-                                                      <h5 class="card-title">ROG Phone 3</h5>
-                                                      <p class="deskripsiTextCard card-text mb-5">Absolute Power, Absolute
-                                                            Visuals,
-                                                            Absolute Control.
-                                                      </p>
-                                                      <br>
-                                                      <button type="button" class="btn btn-primary">WHERE TO BUY</button>
                                                 </div>
                                           </div>
-                                    </div>
-                                    <div class="col">
-                                          <div class="card h-100">
-                                                <img class="card-img-top" src="./assets/images/rog2.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                      <div class="custom-control custom-checkbox mb-2">
-                                                            <input type="checkbox" class="custom-control-input" id="customCheck18">
-                                                            <label class="custom-control-label" for="customCheck18">
-                                                                  BANDINGKAN
-                                                            </label>
-                                                      </div>
-                                                      <hr>
-                                                      <h5 class="card-title">ROG Phone II</h5>
-                                                      <p class="deskripsiTextCard card-text mb-5">PLAY COOLPLAY, TOTAL
-                                                            CONTROL, PLAY COOLPLAY.
-                                                      </p>
-                                                      <br>
-                                                      <button type="button" class="btn btn-primary">WHERE TO BUY</button>
-                                                </div>
-                                          </div>
-                                    </div>
-                                    <div class="col">
+                                    <?php
+                                    }
+                                    ?>
+                                    <!-- <div class="col">
                                           <div class="card h-100">
                                                 <img class="card-img-top" src="./assets/images/rog2.png" alt="Card image cap">
                                                 <div class="card-body">
@@ -343,64 +327,27 @@
                                                 </div>
                                           </div>
                                     </div>
+                                    <div class="col">
+                                          <div class="card h-100">
+                                                <img class="card-img-top" src="./assets/images/rog2.png" alt="Card image cap">
+                                                <div class="card-body">
+                                                      <div class="custom-control custom-checkbox mb-2">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck18">
+                                                            <label class="custom-control-label" for="customCheck18">
+                                                                  BANDINGKAN
+                                                            </label>
+                                                      </div>
+                                                      <hr>
+                                                      <h5 class="card-title">ROG Phone II</h5>
+                                                      <p class="deskripsiTextCard card-text mb-5">PLAY COOLPLAY, TOTAL
+                                                            CONTROL, PLAY COOLPLAY.
+                                                      </p>
+                                                      <br>
+                                                      <button type="button" class="btn btn-primary">WHERE TO BUY</button>
+                                                </div>
+                                          </div>
+                                    </div> -->
                               </div>
-                              <!-- <div class="card-group">
-                                    <div class="card">
-                                          <img class="card-img-top" src="<?= base_url('./assets/images/rog1.png'); ?>" alt="Card image cap">
-                                          <div class="card-body">
-                                                <div class="custom-control custom-checkbox mb-2">
-                                                      <input type="checkbox" class="custom-control-input" id="customCheck17">
-                                                      <label class="custom-control-label" for="customCheck17">
-                                                            BANDINGKAN
-                                                      </label>
-                                                </div>
-                                                <hr>
-                                                <h5 class="card-title">ROG Phone 3</h5>
-                                                <p class="deskripsiTextCard card-text mb-5">Absolute Power, Absolute
-                                                      Visuals,
-                                                      Absolute Control.
-                                                </p>
-                                                <br>
-                                                <button type="button" class="btn btn-primary">WHERE TO BUY</button>
-                                          </div>
-                                    </div>
-                                    <div class="card">
-                                          <img class="card-img-top" src="./assets/images/rog2.png" alt="Card image cap">
-                                          <div class="card-body">
-                                                <div class="custom-control custom-checkbox mb-2">
-                                                      <input type="checkbox" class="custom-control-input" id="customCheck18">
-                                                      <label class="custom-control-label" for="customCheck18">
-                                                            BANDINGKAN
-                                                      </label>
-                                                </div>
-                                                <hr>
-                                                <h5 class="card-title">ROG Phone II</h5>
-                                                <p class="deskripsiTextCard card-text mb-5">PLAY COOLPLAY, TOTAL
-                                                      CONTROL, PLAY COOLPLAY.
-                                                </p>
-                                                <br>
-                                                <button type="button" class="btn btn-primary">WHERE TO BUY</button>
-                                          </div>
-                                    </div>
-                                    <div class="card">
-                                          <img class="card-img-top" src="./assets/images/rog2.png" alt="Card image cap">
-                                          <div class="card-body">
-                                                <div class="custom-control custom-checkbox mb-2">
-                                                      <input type="checkbox" class="custom-control-input" id="customCheck18">
-                                                      <label class="custom-control-label" for="customCheck18">
-                                                            BANDINGKAN
-                                                      </label>
-                                                </div>
-                                                <hr>
-                                                <h5 class="card-title">ROG Phone II</h5>
-                                                <p class="deskripsiTextCard card-text mb-5">PLAY COOLPLAY, TOTAL
-                                                      CONTROL, PLAY COOLPLAY.
-                                                </p>
-                                                <br>
-                                                <button type="button" class="btn btn-primary">WHERE TO BUY</button>
-                                          </div>
-                                    </div>
-                              </div> -->
                         </div>
                   </div>
             </div>
